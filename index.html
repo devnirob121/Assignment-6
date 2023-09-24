@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posts-Assignment 6</title>
+    <link rel="shortcut icon" type="image/png" href="assets/img/Logo.png" />
+    <meta
+      name="description"
+      content="In this advanced programming Hero assignment, we dive into the world of web services and RESTful APIs. Building upon the foundational knowledge gained in previous assignments, Assignment 6 challenges us to harness the power of REST (Representational State Transfer) architecture to interact with remote servers and retrieve or manipulate data programmatically. "/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.52.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body
+    class="py-[1.12rem] px-[1.75rem] sm:py-[2.12rem] sm:px-[1.75rem] lg:py-[3.12rem] lg:px-[3.75rem]"
+  >
+    <!-- header Start -->
+    <div
+      class="navbar flex-col md:flex-row items-center md:justify-between bg-base-100 md:pb-[1.87rem]"
+    >
+      <div class="mb-2 navbar-center md:justify-start md:mb-0">
+        <a class="btn btn-ghost normal-case text-xl">
+          <img src="assets/img/logo.png" alt="" />
+        </a>
+      </div>
+
+      <div class="navbar-center mb-4 md:mb-0">
+        <a
+          id="sortButton"
+          class="btn bg-[#25252533] hover:bg-[#25252533] hover:border-[#25252533] border-[#25252533] px-6 rounded text-black"
+          >Sort by view</a
+        >
+      </div>
+
+      <div class="mb-2 navbar-center md:navbar-end md:mb-0">
+        <a
+          href="blog.html"
+          class="btn bg-[#FF1F3D] border-[#FF1F3D] px-6 rounded text-white"
+          >Blog</a
+        >
+      </div>
+    </div>
+    <!-- header End -->
+
+    <!-- Filter  buttons section Start -->
+    <section
+      class="cat-filters pt-[1rem] md:pt-[1.87rem] px-[1rem] sm:px-[0rem] pb-[1.25rem]"
+    >
+      <div
+        id="category-buttons"
+        class="flex gap-1 md:gap-7 justify-center"
+      ></div>
+    </section>
+    <!-- Filter  buttons section End -->
+
+    <!-- card container start -->
+    <div
+      id="card-container"
+      class="card_container pt-[1.25rem] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 gap-4"
+    ></div>
+    <!-- card container End -->
+
+    <!-- no Data section Start -->
+    <section
+      id="noDataFound"
+      class="hidden py-[0rem] md:py-[6rem] flex items-center"
+    >
+      <div class="no-data w-4/4 sm:w-2/4 p-6 mx-auto text-center">
+        <img
+          class="w-[5.75rem] sm:w-[8.75rem] mx-auto mb-8"
+          src="assets/img/Icon.png"
+          alt="no-data-icon"
+        />
+        <h2 class="text-1xl sm:text-2xl font-bold leading-10">
+          Oops!! Sorry, There is no content here
+        </h2>
+      </div>
+    </section>
+    <!-- no Data section End -->
+
+    <!-- Loader Start -->
+    <div id="loader" class="loading-overlay hidden">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Loader End -->
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
